@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle; width:1000px; height:250px; }
+
+Slideshow container 
+.slideshow-container {
+  max-width:1000px;
+  
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+ On hover, add a black background color with a little bit see-through 
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; */
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: red;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+<ul>
+   <li><a class="active" href="C:\Users\Administrator\Desktop\projects html\bldng projects 1.html">Home</a></li>
+  <li><a class="active" href="file:///C:/Users/Administrator/Desktop/projects%20html/aparna.html">Aparna </a></li>
+  <li><a class="active" href="file:///C:/Users/Administrator/Desktop/projects%20html/aditya.html">Adityabirla</a></li>
+  <li><a class="active" href="file:///C:/Users/Administrator/Desktop/projects%20html/candor.html">Candor</a></li>
+  <li><a class="active" href="file:///C:/Users/Administrator/Desktop/projects%20html/caseytowers.html">CaseyTowers</a></li>
+  <li><a class="active" href="file:///C:/Users/Administrator/Desktop/projects%20html/my%20home%20jewel.html">Myhome jewels</a></li>
+  <li><a class="active" href="file:///C:/Users/Administrator/Desktop/projects%20html/address3.html">Contact</a></li>
+</ul>
+
+
+<div style="padding:20px;margin-top:30px;background-color:#1abc9c;">
+ 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="https://realtynxtmedia201121.s3.ap-south-1.amazonaws.com/media/2022/05/627613e15b3f0_realtynxt-aparna-constructions-.jpg" style="width:100%;height:500px" ">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+ <center> <img src="https://www.adityabirla.com/images/rhs/abg-og-image.jpg?25012023072842" style="width:100%;height:500px"></center>
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <center><img src="https://s3.amazonaws.com/htw/dt-contest-entries/thumbs/102584/canada-Residential-Contracting-Home-renovations-contractor-construction-logo-design.png" style="width:100%;height:500px"></center>
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <center><img src="https://i.pinimg.com/736x/8e/63/20/8e63205d381a992792dbf307a3175726.jpg" style="width:100%;height:500px"></center>
+  
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <center><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b15447de-af78-4083-97f6-3f5a4f37d49e/dbkgrku-b95bbdeb-3ad2-4136-bc07-98195275cae6.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IxNTQ0N2RlLWFmNzgtNDA4My05N2Y2LTNmNWE0ZjM3ZDQ5ZVwvZGJrZ3JrdS1iOTViYmRlYi0zYWQyLTQxMzYtYmMwNy05ODE5NTI3NWNhZTYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.clz2DgkNhI94Af6np_y8YH4necYkdNYczJYxnX8R3BA" style="width:100%;height:500px"></center>
+  
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+ </div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<marquee><h1>Top 5 Construction Companies </h1></marquee>
+<p><center>The number of homes in gated communities has grown over time. Gated community houses have evolved significantly from the original conception of a small number of facilities to a luxury way of life today. Real estate developers explore and innovate […]
+<h1>Aparna Constructions</h1>
+<p>Aparna Dharti provides customers a tranquil, peaceful and spacious ecosystem where they can build their dream homes. The property has amenities like bore water supply connection, harvesting chambers for rain water percolation, electricity powered by armored cables, 60’/ 40’ feet roads within the project, solar powered boundary wall fencing and avenue plantation solar fencing drainage connections; amongst other attributed.</p>
+
+<h1>Aditya Constructions</h1>
+<p>Aditya Construction Company India (P) Ltd., is a reputed enterprise focused on developing luxurious gated communities with the best of amenities. Established in the year 2002, the company has developed numerous luxury apartments, villas at prime locations in Hyderabad. Over the years, Aditya has earned a reputation for quality and innovation. All its projects come with ample greenery, spacious and modern design and the best of amenities and of course, luxury. The company takes particular care in ensuring that its projects feature perfect vaasthu and a clear title so as to give buyers a hassle-free and happy ownership. Today, owning an Aditya Property is associated with prestige as virtually every project the company has developed till date has become a landmark in its respective surroundings.</p>
+
+<h1>Candor Constructions</h1>
+<p>Candor Construction Private Limited is a Private incorporated on 30 August 2016. It is classified as Non-govt company and is registered at Registrar of Companies, Ernakulam. Its authorized share capital is Rs. 100,000 and its paid up capital is Rs. 100,000. It is inolved in Business activities n.e.c.
+
+Candor Construction Private Limited's Annual General Meeting (AGM) was last held on 31 December 2020 and as per records from Ministry of Corporate Affairs (MCA), its balance sheet was last filed on 31 March 2020.
+
+Directors of Candor Construction Private Limited are Abdul Rahim Kudilil Nazruddin, Kudilil Abdulrahiman Naziruddin and Sameena Abdul Rahim.
+</p>
+
+<h1>Casey Towers</h1>
+<p>The Casey Group has been a trusted partner to the construction industry in the area of Tower Crane Sales, Service and Hire since 1989. We are proud to count on the Industries leading construction companies as our customers. Continuous investment in our hire fleet which consists of the German manufactured Liebherr & Wolffkran models has allowed us to maintain our position as a leading supplier</p>
+<h1>My Home Jewels</h1>
+<p>My Home Jewel is indeed a jewel in Hyderabad’s real estate landscape. It is Hyderabad’s first housing project to be awarded with the coveted ‘CRISIL SIX STAR’ rating. What does CRISIL rating mean? It is a top-rate endorsement of My Home’s high standards with regard to timely delivery, financial stability, quality of legal documentation and track record.</p>
+</center>
+<h2>useful links</h2><br>
+<h2><a href="C:\Users\Administrator\Desktop\projects html\bldng projects 1.html">home</a></h2>
+<h2><a href="C:\Users\Administrator\Desktop\projects html\aparna.html">aparna</a></h2>
+<h2><a href="C:\Users\Administrator\Desktop\projects html\aditya.html">aditya</a></h2>
+<h2><a href="C:\Users\Administrator\Desktop\projects html\candor.html">candor</a></h2>
+<h2><a href="C:\Users\Administrator\Desktop\projects html\caseytowers.html">caseytowers</a></h2>
+<h2><a href="C:\Users\Administrator\Desktop\projects html\my home jewel.html">my home jewels</a></h2>
+<h2>facebook</h2>
+<h2>instagram</h2>
+
+</body>
+</html> 
